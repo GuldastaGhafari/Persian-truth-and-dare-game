@@ -1,0 +1,191 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    padding-top: 0px;
+    background: radial-gradient(circle,#0b456b,#021c37);
+}
+h1{
+    font-size: 150px;
+    text-align: center;
+    color: #021c37;
+    -webkit-text-stroke: 3px #00d9ff;
+    text-shadow: 5px 9px 2px black;
+    margin-bottom: 0px;
+}
+audio{
+    display: none;
+}
+
+/*----------------------------------------------Input Section ------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 90%; 
+    margin: auto;
+    align-content: space-around;
+    height: 300px; 
+}
+.item{
+    text-align: center;
+}
+.merge4{
+    grid-column:1/5;
+}
+.merge5{
+    grid-column:5/7;
+}
+.userInput{
+    width: 98%;
+    padding: 15px;
+    background: linear-gradient(to right,#1DE5E2,#B588F7);
+    border: none;
+    color:#021c37;
+    border-radius: 50px 5px 5px 15px;
+    box-shadow: 1px 1px 1px 0px #00d9ff;
+    font-size: 30px;
+    height: 70px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+::-webkit-input-placeholder{
+    color: rgb(83, 83, 83);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.userInput:focus{
+    border-bottom: 3px solid #021c37;
+    transform: translate(0px,3px);
+}
+.submitButton{
+    width: 85%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right,#1DE5E2,#B588F7);
+    border: none;
+    color:#021c37;
+    border-radius: 15px 50px;
+    box-shadow: 1px 1px 1px 0px #00d9ff;
+    font-size: 30px;
+    height: 70px;
+}
+.submitButton:focus{
+    border-bottom: 3px solid #021c37;
+    transform: translate(0px,3px);   
+}
+input[type="text"]{
+    outline: none;
+}
+/*------------------------------------------Person Name array Section----------*/ 
+.personName{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 86%;
+    margin: auto;
+    gap: 5px;
+    justify-content: space-around;
+    padding: 0px; 
+}
+.personName li{
+    padding: 7px 8px;
+    background: linear-gradient(to right,#1DE5E2,#B588F7);
+    border-radius: 10px;
+    color:#021c37;
+    font-size: 30px;
+}
+
+/*-------------------------------------------Turn Button Section----------------*/
+
+#turnButton{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+    background:linear-gradient(to right,#1DE5E2,#B588F7);
+    color: #021c37;
+    box-shadow: 2px 2px  2px #e833f5 ;
+    border: 4px solid #00d9ff;
+    display: none;
+    -webkit-text-stroke: 0.5px #e833f5;
+}
+h3{
+    color: #e833f5 ;
+    font-size: 25px;
+}
+#showText{
+    display: flex;
+    width: 85%;
+    margin: auto; 
+    justify-content: center;
+    display: none;
+}
+.Item{
+    width: 33%;
+    margin: auto;
+    color: #e833f5;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #00d9ff ;
+    border-radius: 10px;
+}
+
+/*---------------------------------------List of question-----------------------*/
+
+#showItem{
+    display: none;
+}
+.showQuestion{
+    display: none;
+}
+h2{
+    text-align: center;
+    color:#e833f5 ;
+    font-size: 50px;
+    margin: 0px;
+}
+.list{
+    padding: 5px;
+    margin: 0px;
+}
+.listContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+.listContainer li{
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right,#1DE5E2,#B588F7);
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #021c37;   
+
+}
+.listContainer div{
+    width: 45%;
+}
+.listContainer li:hover{
+    transition: 0.5s;
+    transform: scale(1.07,1.07);
+    border-radius: 30px; 
+}
+footer{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+
+

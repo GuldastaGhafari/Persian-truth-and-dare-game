@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حقیقت و جرأت</title>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <audio autoplay loop="infinite" valume="10" balance="1">
+        <source src="M.mp3" type="audio/mpeg" >
+    </audio>
+
+    <!-----------------------------------Input Section--------------------------->
+
+    <h1>حقیقت و جرأت</h1><br>
+    <div class="container">
+        <div class="item merge4">
+            <input type="text" placeholder="اسم بازیکن" class="userInput"id="playerName" autofocus>
+        </div>
+        <div class="item merge5">
+            <button class="submitButton" onclick="addElement()">اضافه کردن</button>
+        </div>
+    </div><br>
+    
+    <!-------------------------Person Name Array Section------------------------->
+
+    <ul id="list" class="personName"></ul><br><br><br><br><br><br>
+    <button id="turnButton" onclick="turn()">چرخش</button><br><br><br><br>
+
+     <!-----------------------------List of question---------------------------->
+
+    <div id="showText">
+    <h3>1 : خودم سوال میکنم.</h3> 
+    <h3 onclick="show()"><u>2 : سوال های آماده شده.</u></h3>
+    </div><br><br><br>
+
+    <div id="showItem" >
+      <div class="Item" id="truthButton" onclick="showTruthList()">حقیقت</div>
+      <div class="Item" id="darehButton" onclick="showDareList()">جرأت</div>
+    </div><br><br><br><br>
+
+     <!----------------------------Truth Question Section------------------------>
+
+    <div class="showQuestion" id="showTruthList">
+      <h2 id="true">حقیقت</h2><br>
+      <div class="listContainer">
+          <div>
+              <ul class="list">
+                  <li id="listItemTruth1" onclick="showTruthText1()" onmouseout="hideTruthText1()">1</li>
+                  <li id="listItemTruth2" onclick="showTruthText2()" onmouseout="hideTruthText2()">2</li>
+                  <li id="listItemTruth3" onclick="showTruthText3()" onmouseout="hideTruthText3()">3</li>
+                  <li id="listItemTruth4" onclick="showTruthText4()" onmouseout="hideTruthText4()">4</li>
+                  <li id="listItemTruth5" onclick="showTruthText5()" onmouseout="hideTruthText5()">5</li>
+                  <li id="listItemTruth6" onclick="showTruthText6()" onmouseout="hideTruthText6()">6</li>
+                  <li id="listItemTruth7" onclick="showTruthText7()" onmouseout="hideTruthText7()">7</li>
+                  <li id="listItemTruth8" onclick="showTruthText8()" onmouseout="hideTruthText8()">8</li>
+                  <li id="listItemTruth9" onclick="showTruthText9()" onmouseout="hideTruthText9()">9</li>
+                  <li id="listItemTruth10" onclick="showTruthText10()" onmouseout="hideTruthText10()">10</li>
+                  <li id="listItemTruth11" onclick="showTruthText11()" onmouseout="hideTruthText11()">11</li>
+                  </ul>
+          </div>
+          <div>
+              <ul class="list">
+                  <li id="listItemTruth12" onclick="showTruthText12()" onmouseout="hideTruthText12()">12</li>
+                  <li id="listItemTruth13" onclick="showTruthText13()" onmouseout="hideTruthText13()">13</li>
+                  <li id="listItemTruth14" onclick="showTruthText14()" onmouseout="hideTruthText14()">14</li>
+                  <li id="listItemTruth15" onclick="showTruthText15()" onmouseout="hideTruthText15()">15</li>
+                  <li id="listItemTruth16" onclick="showTruthText16()" onmouseout="hideTruthText16()">16</li>
+                  <li id="listItemTruth17" onclick="showTruthText17()" onmouseout="hideTruthText17()">17</li>
+                  <li id="listItemTruth18" onclick="showTruthText18()" onmouseout="hideTruthText18()">18</li>
+                  <li id="listItemTruth19" onclick="showTruthText19()" onmouseout="hideTruthText19()">19</li>
+                  <li id="listItemTruth20" onclick="showTruthText20()" onmouseout="hideTruthText20()">20</li>
+                  <li id="listItemTruth21" onclick="showTruthText21()" onmouseout="hideTruthText21()">21</li>
+                  <li id="listItemTruth22" onclick="showTruthText22()" onmouseout="hideTruthText22()">22</li>
+                  </ul>
+          </div>
+      </div>
+      </div>
+     <!-----------------------------Dare Question Section------------------------>
+
+      <div class="showQuestion" id="showDareList">
+      <h2>جرأت</h2><br>
+      <div class="listContainer">
+          <div>
+              <ul class="list">
+                  <li id="listItemDare1" onclick="showDareText1()" onmouseout="hideDareText1()">1</li>
+                  <li id="listItemDare2" onclick="showDareText2()"      onmouseout="hideDareText2()">2</li>
+                  <li id="listItemDare3" onclick="showDareText3()" onmouseout="hideDareText3()">3</li>
+                  <li id="listItemDare4" onclick="showDareText4()" onmouseout="hideDareText4()">4</li>
+                  <li id="listItemDare5" onclick="showDareText5()" onmouseout="hideDareText5()">5</li>
+                  <li id="listItemDare6" onclick="showDareText6()" onmouseout="hideDareText6()">6</li>
+                  <li id="listItemDare7" onclick="showDareText7()" onmouseout="hideDareText7()">7</li>
+                  <li id="listItemDare8" onclick="showDareText8()" onmouseout="hideDareText8()">8</li>
+                  <li id="listItemDare9" onclick="showDareText9()" onmouseout="hideDareText9()">9</li>
+                  <li id="listItemDare10" onclick="showDareText10()" onmouseout="hideDareText10()">10</li>
+                  <li id="listItemDare11" onclick="showDareText11()" onmouseout="hideDareText11()">11</li>
+                  </ul>
+          </div>
+          <div>
+            <ul class="list">
+                <li id="listItemDare12" onclick="showDareText12()" onmouseout="hideDareText12()">12</li>
+                <li id="listItemDare13" onclick="showDareText13()" onmouseout="hideDareText13()">13</li>
+                <li id="listItemDare14" onclick="showDareText14()" onmouseout="hideDareText14()">14</li>
+                <li id="listItemDare15" onclick="showDareText15()" onmouseout="hideDareText15()">15</li>
+                <li id="listItemDare16" onclick="showDareText16()" onmouseout="hideDareText16()">16</li>
+                <li id="listItemDare17" onclick="showDareText17()" onmouseout="hideDareText17()">17</li>
+                <li id="listItemDare18" onclick="showDareText18()" onmouseout="hideDareText18()">18</li>
+                <li id="listItemDare19" onclick="showDareText19()" onmouseout="hideDareText19()">19</li>
+                <li id="listItemDare20" onclick="showDareText20()" onmouseout="hideDareText20()">20</li>
+                <li id="listItemDare21" onclick="showDareText21()" onmouseout="hideDareText21()">21</li>
+                <li id="listItemDare22" onclick="showDareText22()" onmouseout="hideDareText22()">22</li>                
+                </ul>
+        </div>
+        </div>
+        </div><br><br>
+        <footer><bdo dir="ltr"><span style="font-size: 19px;">&copy;</span> 2024_Guldasta Ghafari</bdo></footer>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
