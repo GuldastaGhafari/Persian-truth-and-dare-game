@@ -56,6 +56,7 @@ function showTruthList(){
   document.getElementById('darehButton').style.backgroundColor='transparent';
   document.getElementById('darehButton').style.color='#e833f5';
   document.getElementById('darehButton').style.borderColor='#00d9ff';
+  document.getElementById('footer').style.display='block';
 }
 function showDareList(){
   document.getElementById('showDareList').style.display='block';
@@ -66,6 +67,7 @@ function showDareList(){
   document.getElementById('truthButton').style.backgroundColor='transparent';
   document.getElementById('truthButton').style.color='#e833f5';
   document.getElementById('truthButton').style.borderColor='#00d9ff';
+  document.getElementById('footer').style.display='block';
 }
 
 /*-----------------------------Show and hide Truth question---------------------*/
